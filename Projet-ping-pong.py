@@ -22,6 +22,7 @@ plt.plot(t,u,'k.-')
 plt.title('Position de la balle en fonction du temps')
 plt.xlabel('Temps (s)')
 plt.ylabel('Position de la balle en m')
+plt.show()
 
 ##Question 1
 
@@ -36,6 +37,7 @@ plt.plot(t,v,'k.-')
 plt.title('Vitesse de la balle en fonction du temps')
 plt.xlabel('Temps (s)')
 plt.ylabel('Vitesse (m/s)')
+plt.show()
 
 ##Question 2
 
@@ -72,7 +74,7 @@ plt.title('Energie cinetique, de pesanteur et mecanique en fonction du temps')
 plt.xlabel('Temps (s)')
 plt.ylabel('Energie (J)')
 plt.legend(("Em","Ec","Ep"))
-
+plt.show()
 print("La difference d'enegie mecanique est de " , Em[57]-Em[55] ,"J")
                                     #%% Partie 2
                                     
@@ -171,7 +173,7 @@ plt.legend(('positions mesurees' ,  'positions suivant le modele' , 'position av
 plt.xlabel('temps(s)')
 plt.ylabel('position en m')
 plt.title("Positions au cours du temps de la balle suivant les mesures experimentales et le modele")
-
+plt.show()
 
 
 # On va mainenant regarder les erreurs suivant la position pour les fonctions corrigées
@@ -197,7 +199,6 @@ plt.figure()
 plt.title('''Frequence d'apparition des erreurs pour la position en fonction de leur amplitude pour les fonctions corrigees''')
 plt.ylabel('''Frequence d'appartion des erreurs''')
 plt.xlabel(''' Amplitude des erreurs''')
-
 plt.xticks(erreur)
 
 #Pour construire notre histogramme, nous avons défini une fonction constante par classe d'erreur
@@ -207,7 +208,7 @@ for i in range(len(Nberreur)):
     Y = np.linspace(Nberreur[i], Nberreur[i], 100)
     plt.plot(X, Y, 'r-')
     plt.fill_between(X, Y, color='#539ecd')
-    
+plt.show()
 #Question 8
 
 ##vitesse chute
@@ -286,6 +287,7 @@ plt.plot(Tdebut, (f5(Tdebut)))
 plt.plot(Tfin, (f6(Tfin)))
 plt.title('vitesse absolue en fonction du temps en m/s')
 plt.figure()
+plt.show()
 
 # Affichage de l'erreur en fonction de T 
 
@@ -317,6 +319,7 @@ plt.title('''Frequence d'apparition des erreurs sur la vitesse en fonction de le
 plt.ylabel('''Frequence d'appartion des erreurs''')
 plt.xlabel(''' Amplitude des erreurs''')
 
+
 plt.xticks(erreur)
 
 for i in range(len(Nberreur)):
@@ -325,6 +328,7 @@ for i in range(len(Nberreur)):
     plt.plot(X, Y, 'r-')
     plt.fill_between(X, Y, color='#539ecd') #On colorie en dessous
         
+plt.show()
 # L'annalyse des graphes précédents nous donne une erreur systhématique d'environ 0,012m/s
 #On peut donc chercher à la corriger en rajoutant cette constante dans l'équation
 # On a alors : 
@@ -358,8 +362,8 @@ plt.figure()
 plt.title('''Frequence d'apparition des erreurs sur la vitesse en fonction de leur amplitude avec g connu et l'ajout d'une constante correctrice''')
 plt.ylabel('''Frequence d'appartion des erreurs''')
 plt.xlabel(''' Amplitude des erreurs''')
-
 plt.xticks(erreur)
+
 
 for i in range(len(Nberreur)):
     X = np.linspace(erreur[i], erreur[i+1], 100)
@@ -367,7 +371,7 @@ for i in range(len(Nberreur)):
     plt.plot(X, Y, 'r-')
     plt.fill_between(X, Y, color='#539ecd') #On colorie en dessous
 
-
+plt.show()
 # On remarque qu'on est plus près de la mesure, ce qui signifie surement une erreur systhématique par rapport à l'appareil de mesure.
 
 # Partie 3
