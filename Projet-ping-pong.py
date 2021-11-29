@@ -13,9 +13,9 @@ import matplotlib.pyplot as plt
 
 
 # A modifier en fonction du répertoire où sont stockées les données
-motionU = "C:/Users/Clément/Documents/GitHub/Projet-Ping-Pong/Données/motionU.txt"
+motionU = "./Data/motionU.txt"
 u=np.loadtxt(motionU)
-motionT = "C:/Users/Clément/Documents/GitHub/Projet-Ping-Pong/Données/motionT.txt"
+motionT = "./Data/motionT.txt"
 t=np.loadtxt(motionT)
 
 plt.plot(t,u,'k.-')
@@ -87,11 +87,11 @@ import matplotlib.pyplot as plt
 # Il faudra modifier les lignes suivantes en fonction du répertoire où seront stockées les données
 
 
-Tdebut = np.loadtxt("C:/Users/Clément/Documents/GitHub/Projet-Ping-Pong/Données/motionT(debut).txt")
-Ydebut = np.loadtxt("C:/Users/Clément/Documents/GitHub/Projet-Ping-Pong/Données/motionU(debut).txt")
+Tdebut = np.loadtxt("./Data/motionT(debut).txt")
+Ydebut = np.loadtxt("./Data/motionU(debut).txt")
 
-Tfin = np.loadtxt("C:/Users/Clément/Documents/GitHub/Projet-Ping-Pong/Données/motionT(fin).txt")
-Yfin = np.loadtxt("C:/Users/Clément/Documents/GitHub/Projet-Ping-Pong/Données/motionU(fin).txt")
+Tfin = np.loadtxt("./Data/motionT(fin).txt")
+Yfin = np.loadtxt("./Data/motionU(fin).txt")
 
 
 
