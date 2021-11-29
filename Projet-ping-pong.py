@@ -110,7 +110,7 @@ B = np.dot(Mt, Y)
 
 X = np.linalg.solve(A,B) # stocke les coéficients de la première partie
 print('')
-print("Les coéfficients pour la position sont")
+print("Les coefficients pour la position sont")
 print(X)
 
 #deuxième phase Méthode des moindres carrés
@@ -146,7 +146,7 @@ def f2(x) :
 
 # Question 6
 print('')    
-print ( "L'accélération de pesenteur semble être : " , (a1 + a2) , " m/s²")
+print ( "L'acceleration de pesenteur semble etre : " , (a1 + a2) , " m/s²")
 print ("L'erreur est de : " , (a1 + a2)+9,81 ,  " m/s²")
 
 # Cette fois-ci on corrige la fonction sachant que g = -9,81 m.s^-2
@@ -167,10 +167,10 @@ plt.plot(Tfin, f4(Tfin), 'g-')
 plt.plot(Tdebut, f3(Tdebut), 'g-')
 plt.plot(Tdebut, Ydebut, 'b-')
 plt.plot(Tdebut, f1(Tdebut), 'r-')
-plt.legend(('positions mesurées' ,  'positions suivant le modèle' , 'position avec le modèle corrigé'))
+plt.legend(('positions mesurees' ,  'positions suivant le modèle' , 'position avec le modele corrige'))
 plt.xlabel('temps(s)')
 plt.ylabel('position en m')
-plt.title("Positions au cours du temps de la balle suivant les mesures expérimentales et le modèle")
+plt.title("Positions au cours du temps de la balle suivant les mesures experimentales et le modele")
 
 
 
@@ -194,8 +194,8 @@ for i in range(len(Tfin)):
         if(f4(Tfin[i])-Yfin[i] > erreur[j] and f4(Tfin[i])-Yfin[i] < erreur[j+1]):
             Nberreur[j] = Nberreur[j] +1
 plt.figure()
-plt.title('''Fréquence d'apparition des erreurs pour la position en fonction de leur amplitude pour les fonctions corrigées''')
-plt.ylabel('''Fréquence d'appartion des erreurs''')
+plt.title('''Frequence d'apparition des erreurs pour la position en fonction de leur amplitude pour les fonctions corrigees''')
+plt.ylabel('''Frequence d'appartion des erreurs''')
 plt.xlabel(''' Amplitude des erreurs''')
 
 plt.xticks(erreur)
@@ -235,7 +235,7 @@ B = np.dot(Mt, Y)
 X3 = np.linalg.solve(A,B)
 
 print('')
-print("Les coéfficients pour la vitesse sont")
+print("Les coefficients pour la vitesse sont")
 print(X3)
 
 a3= X3[1]
@@ -313,8 +313,8 @@ for i in range(len(Tfin)):
             Nberreur[j] = Nberreur[j] +1
             #On répertorie les erreurs sur Tfin
 
-plt.title('''Fréquence d'apparition des erreurs sur la vitesse en fonction de leur amplitude avec g connu''')
-plt.ylabel('''Fréquence d'appartion des erreurs''')
+plt.title('''Frequence d'apparition des erreurs sur la vitesse en fonction de leur amplitude avec g connu''')
+plt.ylabel('''Frequence d'appartion des erreurs''')
 plt.xlabel(''' Amplitude des erreurs''')
 
 plt.xticks(erreur)
@@ -355,8 +355,8 @@ for i in range(len(Tfin)):
             Nberreur[j] = Nberreur[j] +1
             #On répertorie les erreurs sur Tfin
 plt.figure()
-plt.title('''Fréquence d'apparition des erreurs sur la vitesse en fonction de leur amplitude avec g connu et l'ajout d'une constante correctrice''')
-plt.ylabel('''Fréquence d'appartion des erreurs''')
+plt.title('''Frequence d'apparition des erreurs sur la vitesse en fonction de leur amplitude avec g connu et l'ajout d'une constante correctrice''')
+plt.ylabel('''Frequence d'appartion des erreurs''')
 plt.xlabel(''' Amplitude des erreurs''')
 
 plt.xticks(erreur)
