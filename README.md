@@ -1,4 +1,4 @@
-# Projet-Ping-Pong
+# Project-Ping-Pong
 
 
 ## HOW TO LAUNCH ?
@@ -6,7 +6,7 @@
 python ./Projet-ping-pong.py 
 ```
 
-Dans le cas de python 3, la commande est :
+In the case of python 3, the command is:
 
 ```
 python3 ./Projet-ping-pong.py 
