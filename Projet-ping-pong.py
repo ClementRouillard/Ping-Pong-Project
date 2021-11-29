@@ -68,12 +68,12 @@ plt.figure();
 plt.plot(t,Em,'b.-')
 plt.plot(t,ec,'r.-')
 plt.plot(t,Ep,'g.-')
-plt.title('Énergie cinétique, de pesanteur et mécanique en fonction du temps')
+plt.title('Energie cinetique, de pesanteur et mecanique en fonction du temps')
 plt.xlabel('Temps (s)')
 plt.ylabel('Energie (J)')
 plt.legend(("Em","Ec","Ep"))
 
-print("La différence d'énegie mécanique est de " , Em[57]-Em[55] ,"J")
+print("La difference d'enegie mecanique est de " , Em[57]-Em[55] ,"J")
                                     #%% Partie 2
                                     
 # La question 4 est uniquement théorique 
