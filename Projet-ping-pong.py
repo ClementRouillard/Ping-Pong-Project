@@ -88,7 +88,7 @@ import matplotlib.pyplot as plt
 
 
 Tdebut = np.loadtxt("./Data/motionT(debut).txt")
-Ydebut = np.loadtxt("./Data/motionU(debut).txt")
+Ydebut = np.loadtxt("./Data/motionU(debut).txt") 
 
 Tfin = np.loadtxt("./Data/motionT(fin).txt")
 Yfin = np.loadtxt("./Data/motionU(fin).txt")
