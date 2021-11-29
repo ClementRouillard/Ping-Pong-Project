@@ -1,4 +1,4 @@
-# Project Ping Pong
+# Ping Pong Project
 
   The objective of this project was to determine the moment of impact of the ball with the ground. To do this, we used different models to establish the equations governing the speed and position of the ball as a function of time.
 
